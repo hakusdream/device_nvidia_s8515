@@ -57,7 +57,7 @@ TARGET_EXTRA_CFLAGS += $(call cc-option,  -marm -march=armv7-a)
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/nvidia/s8515
-TARGET_KERNEL_CONFIG := tegra_s8515_cpasjuste_defconfig
+TARGET_KERNEL_CONFIG := tegra_s8515_cyanogenmod_defconfig 
 #BOARD_KERNEL_CMDLINE := "androidboot.selinux=permissive"
 
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -121,7 +121,7 @@ BOARD_UMS_LUNFILE := "/sys/devices/platform/tegra-udc.0/gadget/lun0/file"
 #BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/nvidia/s8515/recovery/recovery_keys.c
 TARGET_RECOVERY_FSTAB := device/nvidia/s8515/recovery.fstab
 #BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/ss8515/recovery/cwm-graphics.c
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+#TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # TWRP RECOVERY
 TW_BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/s8515/recovery/graphics.c
